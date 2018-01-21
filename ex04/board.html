@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+			/* reset */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video, button {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-family: 'Noto Sans KR', Dotum, sans-serif;
+		letter-spacing: -1px;
+	}
+	ol, ul {
+		list-style: none;
+	}
+		.flLeft {float:left;}
+		.flRight {float:right;}
+		.flClear{width:100%; zoom:1;}
+
+		.wrapper {
+			width : 100%;
+			margin : 0 auto;
+			background-color: grey;
+		}
+		.gnb {
+			width: 900px;
+			padding: 30px 0 ;
+			margin : 0 auto;
+			overflow: hidden;
+			background-color: skyblue;
+		}
+		.gnb .gnb_inner {
+			overflow: 	hidden;	
+		}
+		.gnb ul {
+			width: 600px;
+			padding: 10px 0;
+			float: 	right;				
+			display: flex;
+			background: green;
+		}
+		.gnb ul li {
+			width: 300px;
+			padding: 30px 0;			
+			margin-right: 10px;
+			margin-left: 10px;
+			border: 2px solid black;			
+			text-align: center;
+			box-sizing: border-box;
+			background-color: yellow;
+		}
+		header {
+			display: flex;
+		}
+		.wrapper .gnb_inner ul {
+			margin : 0 auto;
+		}
+		.container {
+			background-color: tomato;
+			padding: 10px;
+		}
+		.board {
+			background-color: blue;
+			padding: 80px;
+		}
+		.main_tit {
+			padding: 0 30px;
+			border: 3px solid red;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header id="header">
+			<div class="header_inner">
+				<h1 class="logo">
+				로고
+				</h1>
+				<nav class="gnb">
+					<div class="gnb_inner">
+						<ul>						
+							<li><a href="#">게시판</a></li>						
+							<li><a href="#">로그인</a></li>												
+						</ul>
+					</div>
+				</nav>
+			</div>			
+		</header>
+
+		<div class="container">
+			<div class="board">
+				<div class="boardinner">
+					<div class="main_tit">
+						<h1>안녕하세요 게시판입니다.</h1>
+					</div>
+					<div class="boardlist">
+						<table>
+						<tr>
+							<th>번호</th>
+							<th>제목</th>
+							<th>작성자</th>
+							<th>날짜</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>타이틀</td>
+							<td>김철수</td>
+							<td>20180101</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>타이틀</td>
+							<td>김철수</td>
+							<td>20180101</td>
+						</tr><tr>
+							<td>1</td>
+							<td>타이틀</td>
+							<td>김철수</td>
+							<td>20180101</td>
+						</tr><tr>
+							<td>1</td>
+							<td>타이틀</td>
+							<td>김철수</td>
+							<td>20180101</td>
+						</tr><tr>
+							<td>1</td>
+							<td>타이틀</td>
+							<td>김철수</td>
+							<td>20180101</td>
+						</tr>
+					</table>
+					</div>						
+				</div>					
+			</div>
+				
+				
+			</div>
+		<div class="paging"></div>		
+	</div>
+</body>
+</html>

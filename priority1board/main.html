@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>게시판</title>
+	<style type="text/css">
+
+	@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+		/* reset */
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video, button {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-family: 'Nanum Myeongjo', serif;
+			letter-spacing: -1px;
+		}
+		a {color: black; text-decoration: none; outline: none}
+		ol, ul {list-style: none;}
+
+		/*layout*/
+		#header {width: 100%;}
+		#section {width: 100%}
+		#footer {width:100%}
+
+		/* header */
+		#header .usr_page {padding: 0 50px; float: right; }
+		.usr_page .user_login {padding: 10px; float: left;}
+		.usr_page .user_regis {padding: 10px; float: right;}
+
+		#header .nav {width: 700px; height: 50px; margin: 0 auto;  overflow: hidden;}
+		#header .nav .gnb {width: 500px;}
+
+		/*gnb*/
+		.gnb ul {display: flex;}
+		.gnb li {float: left; padding: 20px; line-height: 1.1; }
+
+		/* section */
+		#section .type01_board {width:100%;}
+		#section .type01_board .type01_board_inner {width: 700px; margin: 0 auto; }
+		.type01_board_inner table {line-height: 1.5; border-collapse: collapse; border-spacing: 0;}
+
+		.type01_board_inner th:nth-child(1) {padding: 10px 15px; background-color: pink;}
+		.type01_board_inner th:nth-child(2) {padding: 10px 15px; background-color: pink;}
+		.type01_board_inner th:nth-child(3) {padding: 10px 70px;}
+		.type01_board_inner th:nth-child(4) {padding: 10px 30px;}
+		.type01_board_inner th:nth-child(5) {padding: 10px 30px;}
+		.type01_board_inner th:nth-child(6) {padding: 10px 15px;}
+		.type01_board_inner th:nth-child(7) {padding: 10px 15px;}
+
+		.type01_board_inner tr {text-align: center;}
+		.type01_board_inner td {padding:5px ;}
+
+		/* section btn */
+		#section .type01_board_btn {width: 300px;}
+
+		/* section paging */
+		#section .paging {width: 500px;}
+
+		/* footer */
+		#footer { width: 700px; height: 60px; margin: 0 auto; text-align: center;line-height: 3.7; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="header">
+			<div class="usr_page">
+				<div class="user_login"><a href="">로그인</a>/</div>
+				<div class="user_regis"><a href="">회원가입</a></div>	
+			</div>
+		 	<div class="nav">
+		 		<div class="gnb">
+		 			<ul>
+		 				<li><a href="">홈</a></li>
+		 				<li><a href="">게시판</a></li>
+		 				<li><a href="">공지사항</a></li>
+		 				<li><a href="">FAQ</a></li>		 				
+		 			</ul>
+		 		</div>
+		 	</div> 	
+ 		</div>
+	 	<div id="section">
+	 		<div class="type01_board">
+	 			<div class="type01_board_inner">
+		 			<table>
+		 				<tr>
+		 					<th>번호</th>
+		 					<th>분류</th>
+		 					<th>제목</th>
+		 					<th>글쓴이</th>
+		 					<th>날짜</th>
+		 					<th>조회수</th>
+		 					<th>추천수</th>	 					
+		 				</tr>
+		 				<tr>
+	 						<td>1</td>
+	 						<td>동행임</td>
+	 						<td><a href="">타이틀</a></td>
+	 						<td>김철수</td>
+	 						<td>20180130</td>
+	 						<td>30</td>
+	 						<td>3</td>
+	 					</tr>
+	 					<tr>
+	 						<td>1</td>
+	 						<td>동행</td>
+	 						<td><a href="">타이틀</a></td>
+	 						<td>김철수</td>
+	 						<td>20180130</td>
+	 						<td>30</td>
+	 						<td>3</td>
+	 					</tr><tr>
+	 						<td>1</td>
+	 						<td>동행</td>
+	 						<td><a href="">타이틀</a></td>
+	 						<td>김철수</td>
+	 						<td>20180130</td>
+	 						<td>30</td>
+	 						<td>3</td>
+	 					</tr><tr>
+	 						<td>1</td>
+	 						<td>동행</td>
+	 						<td><a href="">타이틀</a></td>
+	 						<td>김철수</td>
+	 						<td>20180130</td>
+	 						<td>30</td>
+	 						<td>3</td>
+	 					</tr>
+		 			</table>
+		 		</div>
+	 		</div>
+	 		<div class="type01_board_btn">
+	 			
+	 		</div>
+			<div class="paging">
+				
+			</div>
+	 	</div>
+	 	<div id="footer">copyright 2018</div>
+	</div> 
+</body>
+</html>
